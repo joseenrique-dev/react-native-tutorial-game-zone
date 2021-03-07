@@ -6,6 +6,7 @@ import ReviewDetails from "../screens/reviewDetails";
 
 
 const Stack = createStackNavigator();
+
 function HomeStack() {
     return (
       <NavigationContainer>
