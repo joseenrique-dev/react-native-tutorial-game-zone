@@ -3,7 +3,7 @@ import { TouchableWithoutFeedback, Keyboard,View, Text, FlatList, TouchableOpaci
 import { globalStyles } from "../styles/global";
 import Card from '../shared/card';
 import { MaterialIcons } from "@expo/vector-icons";
-import ReviewForm from "./reviweForm";
+import ReviewForm from "./reviewForm";
 
 
 export default function Home({ navigation }) {
@@ -20,7 +20,7 @@ export default function Home({ navigation }) {
         setReviews(( currentReview )=>{
             return [review,...currentReview ];
         });
-        setModalOpen(false);
+        //setModalOpen(false);
 
     }
     //navigate for the component name
