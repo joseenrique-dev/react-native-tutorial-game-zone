@@ -15,6 +15,13 @@ export const globalStyles = StyleSheet.create({
     padding: 20,
     backgroundColor:'white'
   },
+  input:{
+      borderWidth:1,
+      borderColor:'#ddd',
+      padding:10,
+      fontSize:18,
+      borderRadius: 6
+  }
 });
 
 export const images = {
