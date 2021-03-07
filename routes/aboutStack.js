@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import About from '../screens/about';
+import Header from '../shared/header';
 
 
 const Stack = createStackNavigator();
@@ -22,10 +23,9 @@ function AboutStack() {
             <Stack.Screen 
                 name="About"
                 component={About} 
-                options={{ 
-                    title: 'About Game Zone',
-                    // headerStyle:{backgroundColor: '#eee'}  
-                }}
+                options={({ navigation }) => ({
+                    headerTitle: ()=><Header navigation={navigation} title='About GameZone'/>,
+                })}
             />
         </Stack.Navigator>
       
