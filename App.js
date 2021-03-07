@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Home from "./screens/home";
 import AppLoading from 'expo-app-loading';
 import { useFonts } from 'expo-font';
-import HomeStack from "./routes/homeStack";
+import RootDrawerNavigator from "./routes/drawer";
 
 const getFonts = () => Font.loadAsync({
     'nunito-regular': require('./assets/fonts/Nunito-Regular.ttf'),
@@ -23,7 +23,7 @@ export default function App() {
     return <AppLoading />;
   } else {
     return (
-      <HomeStack />
+      <RootDrawerNavigator />
     );
   }
 }
