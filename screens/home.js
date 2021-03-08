@@ -20,7 +20,7 @@ export default function Home({ navigation }) {
         setReviews(( currentReview )=>{
             return [review,...currentReview ];
         });
-        //setModalOpen(false);
+        setModalOpen(false);
 
     }
     //navigate for the component name

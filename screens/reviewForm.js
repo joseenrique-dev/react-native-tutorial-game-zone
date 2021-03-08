@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Button, TextInput } from 'react-native'
 import { globalStyles } from "../styles/global";
 import { Formik } from 'formik';
 import * as yup from 'yup';
+import FlatButton from "../shared/button";
 
 const reviewSchema  = yup.object().shape({
     title: yup.string()
@@ -78,12 +79,9 @@ export default function ReviweForm({ addReview }) {
                             {(errors.rating && touched.rating) &&
                                 <Text style={globalStyles.errorText}>{errors.rating}</Text>
                             }
-                            <Button 
-                                title='submit'
-                                color='maroon'
-                                type="submit"
-                                //disabled={!isValid}
+                            <FlatButton 
                                 onPress={handleSubmit}
+                                text='submit'
                             />
                         </View>
                     )
